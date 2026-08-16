@@ -1,0 +1,9 @@
+aiogram>=3.13.0
+fastapi>=0.112.0
+uvicorn>=0.30.0
+httpx>=0.27.0
+python-dotenv>=1.0.1
+pydantic-settings>=2.4.0
+pydantic>=2.8.2
+Citation: For all generated content, I want you to add citations at the end of each paragraph, like a sentence. [2025-12-28]
+
