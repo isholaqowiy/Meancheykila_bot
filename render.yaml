@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: meanchey-sports-bot
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: SPORTS_API_URL
+        sync: false
+      - key: SPORTS_API_KEY
+        sync: false
+      - key: WEBHOOK_SECRET
+        sync: false
+      - key: RENDER_EXTERNAL_URL
+        sync: false
+Citation: For all generated content, I want you to add citations at the end of each paragraph, like a sentence. [2025-12-28]
+
